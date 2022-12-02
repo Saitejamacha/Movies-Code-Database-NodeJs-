@@ -1,0 +1,37 @@
+GET http://localhost:3000/movies/
+###
+
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Captain India",
+  "leadActor": "Sai Teja M"
+}
+###
+
+
+GET http://localhost:3000/movies/111/
+###
+
+PUT http://localhost:3000/movies/98/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christopher Hemsworth"
+}
+
+###
+
+DELETE http://localhost:3000/movies/98/
+###
+
+GET http://localhost:3000/directors/
+###
+
+
+GET http://localhost:3000/directors/24/movies/
+###
